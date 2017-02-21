@@ -4,24 +4,33 @@ import com.huahua.util.SwpUtils
 
 /**
  * Created by yuwenbing on 17/2/20.
+ * @author wenbing.yu
+ * @define 冒泡排序算法
  *
- * 冒泡排序算法
  */
 object BubbleSort {
 
 
-  def BubbleSort(array: Array[Int]): Unit = {
+  def bubbleSort(array: Array[Int]): Unit = {
 
 
-    //控制循环的趟数从1到length-1   1 012  2 01 3 0
+    /**
+     * /控制循环的趟数从1到length-1   1 012  2 01 3 0
+     */
     for (i <- 1 to array.length) {
 
-      //每一趟比较的次数 相加等于length
+      /**
+       * 每一趟比较的次数 相加等于length
+       */
       for (j <- 0 to array.length - i - 1) {
 
         if (array(j) < array(j + 1)) {
 
-          SwpUtils.getIntermediateVariableSwap(array, j, j + 1)
+          /**
+           * 交换数据
+           **/
+          //SwpUtils.getIntermediateVariableSwap(array, j, j + 1)
+          SwpUtils.getlusSubSwap(array, j, j + 1)
         }
 
       }
@@ -43,7 +52,7 @@ object BubbleSort {
     numbers(2) = 4
     numbers(3) = 5
 
-    BubbleSort(numbers)
+    bubbleSort(numbers)
 
   }
 

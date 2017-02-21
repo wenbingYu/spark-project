@@ -22,4 +22,36 @@ object SwpUtils {
 
   }
 
+  /**
+   *
+   * 位运算,效率最高
+   **/
+  def getBitOperatorSwap(array: Array[Int], x: Int, y: Int): Array[Int] = {
+
+    array(x) = array(x) ^ array(y)
+
+    array(y) = array(x) ^ array(y)
+
+    array(x) = array(x) ^ array(y)
+
+    array
+
+  }
+
+  /**
+   * 加减法运行交换数据,但是有可能越界
+   **/
+  def getlusSubSwap(array: Array[Int], x: Int, y: Int): Array[Int] = {
+
+    array(x) = array(x) + array(y)
+
+    array(y) = array(x) - array(y)
+
+    array(x) = array(x) - array(y)
+
+    array
+
+  }
+
+
 }
