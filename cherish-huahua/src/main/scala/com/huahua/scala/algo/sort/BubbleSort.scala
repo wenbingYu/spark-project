@@ -1,5 +1,7 @@
 package com.huahua.scala.algo.sort
 
+import com.huahua.com.huahua.util.SwpUtils
+
 /**
  * Created by yuwenbing on 17/2/20.
  *
@@ -19,10 +21,7 @@ object BubbleSort {
 
         if (array(j) < array(j + 1)) {
 
-          val tmp = array(j)
-          array(j) = array(j + 1)
-          array(j + 1) = tmp
-
+          SwpUtils.getIntermediateVariableSwap(array, j, j + 1)
         }
 
       }

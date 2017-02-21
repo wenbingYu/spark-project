@@ -1,0 +1,9 @@
+/target/
+/bin/
+/.settings/
+.classpath
+.project
+*.iml
+*.prefs
+*.DS_Store
+*.log
