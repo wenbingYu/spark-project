@@ -1,4 +1,4 @@
-package com.huahua.spark.example
+package com.huahua.spark
 
 import org.apache.spark.{SparkContext, SparkConf}
 

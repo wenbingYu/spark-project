@@ -1,4 +1,4 @@
-package com.huahua.com.huahua.util
+package com.huahua.util
 
 /**
  * Created by yuwenbing on 17/2/21.

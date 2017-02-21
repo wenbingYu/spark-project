@@ -1,6 +1,6 @@
-package com.huahua.scala.algo.sort
+package com.huahua.algo.sort
 
-import com.huahua.com.huahua.util.SwpUtils
+import com.huahua.util.SwpUtils
 
 /**
  * Created by yuwenbing on 17/2/20.
